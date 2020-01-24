@@ -174,11 +174,12 @@ header {
 }
 header .navbar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   flex-direction: row;
   border-bottom: dashed 1px black;
   align-items: center;
-  margin: 2rem 0rem;
+  margin-top: 2rem;
+  padding: 0% 10%;
   padding-bottom: 2rem;
 }
 header .navbar nav a {
@@ -186,8 +187,17 @@ header .navbar nav a {
   margin: 0rem 1.2rem;
   color: black;
 }
+header .head {
+  width: 80%;
+  margin-left: 10%;
+}
+header .head h2 {
+  margin-top: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: black 1px dashed;
+}
 .home .content-section {
-  margin: 30px 0;
+  margin: 30px 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
