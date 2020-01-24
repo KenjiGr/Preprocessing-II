@@ -199,11 +199,11 @@ header .navbar nav a {
 header .head {
   width: 80%;
   margin-left: 10%;
+  border-bottom: black 1px dashed;
 }
 header .head h2 {
   margin-top: 2rem;
   padding-bottom: 2rem;
-  border-bottom: black 1px dashed;
 }
 .home .content-section {
   margin: 30px 5%;
@@ -222,6 +222,17 @@ header .head h2 {
 .home .content-section .img-content img {
   border-radius: 10px;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    flex-direction: column;
+  }
+  .home .content-section .text-content {
+    width: 100%;
+  }
+  .home .content-section .img-content {
+    width: 100%;
+  }
+}
 .home .inverse-content {
   padding-bottom: 30px;
   border-bottom: 2px dashed #C0C0C0;
@@ -234,27 +245,41 @@ header .head h2 {
   padding-right: 1%;
   padding-left: 0;
 }
-.home .content-destination {
+@media (max-width: 500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+  }
+}
+.content-destination {
   width: 75%;
   margin: 0 auto 30px;
 }
-.home .content-destination img {
+.content-destination img {
   border-radius: 10px;
 }
-.home .content-pick {
+.content-pick {
   padding-top: 30px;
   border-top: 2px dashed #C0C0C0;
   display: flex;
   justify-content: space-between;
 }
-.home .content-pick .destination {
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+  }
+  .content-pick .destination {
+    justify-content: center;
+    width: 100%;
+  }
+}
+.content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
   justify-items: center;
 }
-.home .content-pick .btn {
+.content-pick .btn {
   border-radius: 10px;
   color: #FFFFFF;
   background: #17A2B8;
