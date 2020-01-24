@@ -4,3 +4,14 @@
     color: @color;
     background: @bgcolor;
 }
+.highlight(@time){
+    animation: Highlight @time;
+}
+@keyframes Highlight {
+    0%{
+      transform: scale(1);
+    }
+    100%{
+      transform: scale(1.2)
+    }
+  }

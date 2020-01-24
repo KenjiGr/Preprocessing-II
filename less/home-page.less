@@ -79,14 +79,7 @@ header{
     display: flex;
     justify-content: space-between;
 
-    @media @phone{
-      flex-direction: column;
-        .destination{
-          justify-content: center;
-          width: 100%;
-      }
-    }
-
+    
     .destination {
       width: 30%;
       margin-bottom: 30px;
@@ -94,7 +87,7 @@ header{
       flex-direction: column;
       justify-items: center;
     }
-
+    
     .btn{
       .btnad(@white, @eastern-blue);
       width: 60%;
@@ -102,5 +95,20 @@ header{
       display: flex;
       justify-content: center;
       align-items: center;
+      &:hover{
+        .highlight(1s);
+      }
+    }
+     @media @phone{
+       flex-direction: column;
+     .destination{
+      justify-content: center;
+      width: 100%;
+      padding: 0rem 4rem;
+     }
+     .btn{
+       width: 90%;
+       height: 4vh;
+     }
     }
 }// home

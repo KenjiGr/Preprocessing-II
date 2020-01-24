@@ -1,3 +1,11 @@
+@keyframes Highlight {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -263,15 +271,6 @@ header .head h2 {
   display: flex;
   justify-content: space-between;
 }
-@media (max-width: 500px) {
-  .content-pick {
-    flex-direction: column;
-  }
-  .content-pick .destination {
-    justify-content: center;
-    width: 100%;
-  }
-}
 .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
@@ -288,6 +287,23 @@ header .head h2 {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.content-pick .btn:hover {
+  animation: Highlight 1s;
+}
+@media (max-width: 500px) {
+  .content-pick {
+    flex-direction: column;
+  }
+  .content-pick .destination {
+    justify-content: center;
+    width: 100%;
+    padding: 0rem 4rem;
+  }
+  .content-pick .btn {
+    width: 90%;
+    height: 4vh;
+  }
 }
 .footer {
   width: 100%;
